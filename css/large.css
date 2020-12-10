@@ -1,0 +1,106 @@
+/* 64em is also 1028px (if basefont is 16px) */
+@media only screen and (min-width: 64rem) {
+
+    header,
+    nav,
+    main,
+    footer {
+        max-width: 64rem;
+        margin: auto;
+        padding: .5rem;
+    }
+  
+    div.cards {
+        display: grid;
+        width: 100%;
+        padding: 10px;
+      }
+    /*----------- BODY --------------*/
+
+
+
+    /*----------- HEADER --------------*/
+
+
+
+    /*----------- NAVIGATION --------------*/
+    nav button {
+        display: none;
+    }
+
+    nav ul.hide {
+        display: block;
+    }
+
+    nav ul {
+        margin-left: 2%;
+    }
+
+    nav ul li {
+        float: left;
+    }
+
+    nav a {
+        display: block;
+    }
+
+    nav ul li a {
+        border: none;
+        border-right: 1px solid rgba(175, 175, 175, 0.3);
+        background-color: rgb(175, 175, 175);
+        color: #000;
+        padding: .8rem 1rem;
+    }
+
+    nav ul {
+        margin-left: 2%;
+    }
+
+    nav ul li {
+        width: auto;
+    }
+
+    nav ul li:first-child a {
+        border-left: 1px solid #777;
+    }
+
+    nav ul li:last-child a {
+        border-right: 1px solid #777;
+    }
+
+    nav ul li a {
+        padding: .5rem 1rem;
+    }
+
+    /*----------- MAIN --------------*/
+    form label.sbs {
+    -webkit-appearance: none;
+    display: block;
+    font-size: .8rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .4rem 0;
+    color: #555;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0, 0, 0, 0.1);
+    }
+    div.cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+      }
+      .social,
+      .cards {
+        padding: .5rem 2vw;
+      }
+    
+      .social img,
+      .cards img {
+        width: 100%;
+      }
+    /*----------- FOOTER --------------*/
+
+}
+
+/* end of media query */

@@ -1,0 +1,212 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.cards {
+  display: block;
+  flex-flow: nowrap;
+}
+.social {
+  display: block;
+  flex-flow: nowrap;
+}
+
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+}
+
+
+/*----------- HEADER --------------*/
+header {
+    padding: .5rem 2%;
+    background-color: #ddd;
+}
+header h1 {margin: 0;}
+header h2 {margin: 0; font-weight: normal;}
+
+/*----------- NAVIGATION --------------*/
+a {
+    text-decoration: none;
+  }
+  
+  nav {
+    font-family: monospace;
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+  }
+    
+  li a {
+    color: black;
+  }
+  
+  li:hover,
+  li:focus-within {
+    cursor: pointer;
+  }
+  
+  li:focus-within a {
+    outline: none;
+  }
+  
+  ul li ul {
+    visibility: hidden;
+    opacity: 0;
+    min-width: 5rem;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+    left: 0;
+    display: none;
+  }
+  
+  ul li:hover > ul,
+  ul li:focus-within > ul,
+  ul li ul:hover,
+  ul li ul:focus {
+    visibility: visible;
+    opacity: 1;
+    display: block
+  }
+  
+  ul li ul li {
+    clear: both;
+    width: 100%;
+  }
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+}
+nav ul li {
+    float: left;
+    width: 20%;
+}
+nav ul li a {
+    display: block;
+    Background-color: white;
+    border-left: 1px solid #777;
+    padding: .5rem 0;
+    text-decoration: none;
+    font-size: .9rem;
+    text-align: center;
+}
+nav ul li:first-child a {border-left: none;}
+
+nav ul li a:hover {
+    color: rgb(44, 44, 44);
+}
+nav ul li.active a {
+    background-color: rgb(151, 66, 66);
+    color: rgb(41, 41, 41);
+}
+
+/*----------- MAIN --------------*/
+
+main {
+    padding: 0 2%;
+    min-height: 20rem;
+}
+div a {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+}
+.social a img {width: 100%;}
+.cards a img {width: 100%;}
+.cards a {grid-column: 1 / span 3;}
+.cards {grid-template-columns: 1fr;}
+
+/*------ FORM -----*/
+form fieldset {
+    margin: 2rem 0;
+    border: 1px solid #445ba9;
+    border-radius: 10px;
+    padding: .5rem 2%;
+}
+form legend {
+    color: #445ba9;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+}
+form label.top, form div {
+    display: block;
+    padding-top: 1rem;
+    color: #9c2c13;
+    font-size: .8rem;
+}
+form label.top input, form label.top select {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.parent:hover {
+    display: block;
+}
+.parent {
+    float: left;
+    overflow: hidden;
+  }
+form label.sbs {
+    display: block;
+    padding: .75rem 0;
+    color: #555;
+}
+form label.sbs input, form label.sbs select {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+form input.submitBtn {
+    border: none;
+    background-color: #9c2c13;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+}
+form label.top input:required {
+    border-left: red solid 6px;
+}
+form label.top input:valid {
+    border-left: green solid 6px;
+}
+
+/*----------- FOOTER --------------*/
+footer {
+    background-color: #ddd;
+    padding: .5rem 2%;
+    text-align: center;
+}
+
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
