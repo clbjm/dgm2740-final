@@ -27,21 +27,62 @@ header {
 }
 header h1 {margin: 0;}
 header h2 {margin: 0; font-weight: normal;}
-
+/* .logo {width: 25%;} */
 /*----------- NAVIGATION --------------*/
-a {
-    text-decoration: none;
-  }
-  
-  nav {
-    font-family: monospace;
-  }
-  
-  ul {
-    list-style: none;
-    margin: 0;
-    padding-left: 0;
-  }
+ 
+nav button {
+  margin: .2rem 2%;
+  background-color: transparent;
+  border: none;
+  font-size: 1.6rem;
+  color: rgb(173, 173, 173);
+}
+
+nav {
+  background-color: #666;
+  font-family: verdana, sans-serif;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  float: left;
+  width: 25%;
+}
+
+nav ul li a {
+  display: block;
+  background-color: #444;
+  color: #000;
+  border-left: 1px solid #777;
+  padding: .8rem 2%;
+  text-decoration: none;
+  border-top: 1px solid #b5b5b5;
+  font-size: .9rem;
+  text-align: center;
+}
+
+nav ul li:first-child a {
+  border-left: none;
+}
+
+nav ul li a:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: rgb(177, 177, 177);
+}
+
+nav ul li.active a {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #fff;
+}
+
+nav ul.hide {
+  display: none;
+}  
     
   li a {
     color: black;
@@ -79,16 +120,6 @@ a {
     clear: both;
     width: 100%;
   }
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: grid;
-}
-nav ul li {
-    float: left;
-    width: 20%;
-}
 nav ul li a {
     display: block;
     Background-color: white;
@@ -98,32 +129,25 @@ nav ul li a {
     font-size: .9rem;
     text-align: center;
 }
-nav ul li:first-child a {border-left: none;}
-
-nav ul li a:hover {
-    color: rgb(44, 44, 44);
-}
-nav ul li.active a {
-    background-color: rgb(151, 66, 66);
-    color: rgb(41, 41, 41);
-}
-
 /*----------- MAIN --------------*/
 
 main {
     padding: 0 2%;
     min-height: 20rem;
 }
-div a {
+.cards {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
 }
+.social {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+}
+
 .social a img {width: 100%;}
 .cards a img {width: 100%;}
-.cards a {grid-column: 1 / span 3;}
-.cards {grid-template-columns: 1fr;}
-
 /*------ FORM -----*/
 form fieldset {
     margin: 2rem 0;

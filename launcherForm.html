@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <title>dgm2740 final</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     <!-- STYLE SHEETS -->
     <link href="css/normalize.css" rel="stylesheet">
@@ -16,12 +17,28 @@
 </head>
 
 <body>
-    <nav class="clearfix">
+       <!-- HEADER HERE -->
+   <header class="clearfix">
+    <figure class="logo">
+        <img src="images/logo.png" alt="logo" 
+        srcset="images/logo1.png 1x, 
+        images/logo2.png 2x, 
+        images/logo3.png 3x">
+    </figure>
+        <header>
+      <h1>DMVR</h1>
+      <h2>where we can play yugioh in vr</h2>
+    </header>
+  </header>
+  <nav class="clearfix">
+    <button onclick="toggleMenu()">&#9776;</button>
+    <ul id="primaryNav" class="hide">
         <ul class="menu">
             <li><a href="gameForm.html">bugs with the game</a></li>
             <li><a href="websiteForm.html">bugs with the website</a></li>
             <li><a href="index.html">our staff</a></li>
             <li class="active"><a href="launcherForm.html">bugs with the launcher</a></li>
+        </ul>
         </ul>
         <div class="keepOpen"></div>
     </nav>
@@ -71,6 +88,10 @@
         <footer>
             &copy; 2020 &bull; Jonathon Mullins &bull; 123-555-6789
         </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript" src="slick/slick.min.js"></script>
 </body>
 
 </html>

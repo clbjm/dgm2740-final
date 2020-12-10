@@ -20,7 +20,7 @@
 
 
     /*----------- HEADER --------------*/
-
+/* .logo {width: 25%;} */
 
 
     /*----------- NAVIGATION --------------*/
@@ -69,7 +69,8 @@
     }
 
     nav ul li a {
-        padding: .5rem 1rem;
+        padding: .5rem 3rem;
+        margin: .3rem;
     }
 
     /*----------- MAIN --------------*/

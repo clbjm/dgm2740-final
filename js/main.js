@@ -1,3 +1,6 @@
+function toggleMenu() {
+    document.getElementById("primaryNav").classList.toggle("hide");
+}
 $(document).ready(function () {
     $('.slider').slick({
         dots: false,

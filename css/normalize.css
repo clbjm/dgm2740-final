@@ -91,11 +91,11 @@ div:nth-child(4) a {
   background-color: #b43093;
 }
 div:nth-child(1) a:hover {
-background-image: url("../images/jay.jpg");
+background-image: url("../images/arc.jpg");
 background-repeat: no-repeat;
 }
 div:nth-child(2) a:hover {
-  background-image: url("../images/ice.png");
+  background-image: url("../images/band10.jpg");
   background-repeat: no-repeat;
 }
 div:nth-child(3) a:hover {
@@ -103,7 +103,7 @@ div:nth-child(3) a:hover {
   background-repeat: no-repeat;
   }
   div:nth-child(4) a:hover {
-    background-image: url("../images/mute.jpg");
+    background-image: url("../images/band02.jpg");
     background-repeat: no-repeat;
   }
 div a:hover {
@@ -261,7 +261,9 @@ audio:not([controls]) {
 img {
   border-style: none;
 }
-
+div.logo {
+  width: 15%;
+}
 /**
  * Hide the overflow in IE.
  */
